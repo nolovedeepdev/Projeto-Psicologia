@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="static/css/style.css">
     
-
+    <style>
+      #header-1{
+        top: 5000px;
+      }
+    </style>
 </head>
 
 <body>
 
     <!-- Navbar-->
+    <canvas id="canvas"></canvas>
     <div>
-        <canvas id="canvas"></canvas>
         <div class="header-blue">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
                 <div class="container"><a class="navbar-brand" href="#">Code EDU</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -36,7 +40,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
                         <h1>Plataforma Code EDU</h1>
-                        <p>Projeto web de ensino de programação para básica pa o Trabalho de Psicologia da Computação  </p><button class="btn btn-light btn-lg action-button" type="button">Learn More</button></div>
+                        <p>Projeto web para o Trabalho de Psicologia da Computação  </p><button class="btn btn-light btn-lg action-button" type="button"><a href="#linguagem"><strong>Ler o artigo do programa</strong> </a></button></div>
                     <div
                         class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                         <div class="iphone-mockup"><img src="static/img/__code edu_v1.gif" class="device">
@@ -48,7 +52,7 @@
     </div>
     </div>
 
-    <header>
+    <header id="header-1">
         <div class="bg-light">
           <div class="container py-5">
             <div class="row h-100 align-items-center py-5">
@@ -125,80 +129,113 @@
     <!--Exercicios-->
 
     <div class="p-5 bg-white rounded shadow mb-5">
-        <div class="p-5 bg-white rounded shadow mb-5">
-            <!-- Lined tabs-->
-            <ul id="myTab2" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
-              <li class="nav-item flex-sm-fill">
-                <a id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 active">Exercício</a>
-              </li>
-              <li class="nav-item flex-sm-fill">
-                <a id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0">Compilador</a>
-              </li>
-              <li class="nav-item flex-sm-fill">
-                <a id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0">Resposta</a>
-              </li>
-            </ul>
-            <div id="myTab2Content" class="tab-content">
-              <div id="home2" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
-                <h2>Exercício – Criar seu primeiro aplicativo</h2>
+      <!-- Lined tabs-->
 
-                <p class="leade font-italic mb-0">Uma ótima maneira de começar a usar com o Python é aprender a executar a entrada e saída. No Python, a função print, que é uma das mais de 60 funções integradas à linguagem, gera texto na tela.<br> A instrução a seguir exibe "Olá, Mundo!" na tela:</p>
-              </div>
-              <div id="profile2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
-                <iframe src="https://trinket.io/embed/python3/1bfd976934" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <ul id="myTab2" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
+        <li class="nav-item flex-sm-fill">
+          <a id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0 active">Aulas</a>
+        </li>
 
-              </div>
-              <div id="contact2" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
-                <p class="leade font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="leade font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
+        <li class="nav-item flex-sm-fill">
+          <a id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3 rounded-0">Exercícios</a>
+        </li>
+
+        <li class="nav-item flex-sm-fill">
+          <a id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false" class="nav-link text-uppercase font-weight-bold rounded-0">Compilador</a>
+        </li>
+      </ul>
+
+      <div id="myTab2Content" class="tab-content">
+
+        <div id="home2" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+          <p class="leade font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="leade font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+
+        <div id="profile2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+          <h2>Exercício #1 – Criar seu primeiro aplicativo</h2>
+
+          <p class="leade font-italic mb-0">Uma ótima maneira de começar a usar com o Python é aprender a executar a entrada e saída. No Python, a função print, que é uma das mais de 60 funções integradas à linguagem, gera texto na tela.<br> Tente executar "Olá, Mundo!" na aba "Compilador" ao lado: <br></p>
+          <h3><br>Extremamente básico - URI</h3>
+          <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+          <p><br>Leia 2 valores inteiros e armazene-os nas variáveis A e B. Efetue a soma de A e B atribuindo o seu resultado na variável X. 
+            Imprima X conforme exemplo apresentado abaixo. 
+            Não apresente mensagem alguma além daquilo que está sendo especificado e não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".<br>
+      
+            <br><strong>Entrada</strong> <br>
+            A entrada contém 2 valores inteiros.<br>
+            
+            <br><strong>Saída</strong><br>
+            Imprima a mensagem "X = " (letra X maiúscula) seguido pelo valor da variável X e pelo final de linha. Cuide para que tenha um espaço antes e depois do sinal de igualdade, conforme o exemplo abaixo.</p><br>
+        
+            <!--EXERCICIO-->
+            <h2>Exercício #2 – Área do Círculo</h2>
+            <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+            <p><br>A fórmula para calcular a área de uma circunferência é: area = π . raio2. Considerando para este problema que π = 3.14159:<br>
+            <p>- Efetue o cálculo da área, elevando o valor de raio ao quadrado e multiplicando por π.</p>
+      
+              <strong>Entrada</strong> 
+              A entrada contém um valor de ponto flutuante (dupla precisão), no caso, a variável raio.<br>
+      
+              
+              <strong>Saída</strong><br>
+              <p>Apresentar a mensagem "A=" seguido pelo valor da variável area, conforme exemplo abaixo, com 4 casas após o ponto decimal. Utilize variáveis de dupla precisão (double). Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
+              
+              <!--EXERCICIO-->
+              <h2>Exercício #3 – Soma Simples</h2>
+              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9><br>
+              <p><br>Leia dois valores inteiros, no caso para variáveis A e B. A seguir, calcule a soma entre elas e atribua à variável SOMA. A seguir escrever o valor desta variável.</p><br>
+      
+              <strong>Entrada</strong><br>
+              <p>O arquivo de entrada contém 2 valores inteiros.</p> <br>
+                
+              <strong>Saída</strong><br>
+              <p>Imprima a mensagem "SOMA" com todas as letras maiúsculas, com um espaço em branco antes e depois da igualdade seguido pelo valor correspondente à soma de A e B. Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
+            
+              <!--EXERCICIO-->
+              <h2>Exercício #4 – Produto Simples</h2>
+              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+              <p><br>Leia dois valores inteiros. A seguir, calcule o produto entre estes dois valores e atribua esta operação à variável PROD. A seguir mostre a variável PROD com mensagem correspondente.   </p><br>
+      
+              <strong>Entrada</strong><br>
+              <p>O arquivo de entrada contém 2 valores inteiros.</p> <br>
+                
+              <strong>Saída</strong><br>
+              <p>Imprima a mensagem "PROD" e a variável PROD conforme exemplo abaixo, com um espaço em branco antes e depois da igualdade. Não esqueça de imprimir o fim de linha após o produto, caso contrário seu programa apresentará a mensagem: “Presentation Error”.</p><br>
+      
+              <!--EXERCICIO-->
+              <h2>Exercício #5 – Média 1</h2>
+              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+              <p><br>Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.</p><br>
+      
+              <strong>Entrada</strong><br>
+              <p>O arquivo de entrada contém 2 valores com uma casa decimal cada um.</p> <br>
+                
+              <strong>Saída</strong><br>
+              <p>Imprima a mensagem "MEDIA" e a média do aluno conforme exemplo abaixo, com 5 dígitos após o ponto decimal e com um espaço em branco antes e depois da igualdade. Utilize variáveis de dupla precisão (double) e como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
+              
+        </div>
+
+        <div id="contact2" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+          <iframe src="https://trinket.io/embed/python3/1bfd976934" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!-- End lined tabs -->
     </div>
 
     <!-- Footer -->
-    <div class="footer-clean">
-        <footer>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Legacy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Careers</h3>
-                        <ul>
-                            <li><a href="#">Job openings</a></li>
-                            <li><a href="#">Employee success</a></li>
-                            <li><a href="#">Benefits</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
-                        <p class="copyright">Company Name © 2020</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    <footer class="bg-light pb-5">
+      <div class="container text-center">
+        <p class="font-italic text-muted mb-0">Code EDU &copy; 2020  - Copyrights switchdata.com.br All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="static/js/boxes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-</body>
-
-   
+</body>   
     
 </html>
