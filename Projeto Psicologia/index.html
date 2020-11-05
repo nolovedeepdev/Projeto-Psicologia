@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/js/script.js">
     
 
 </head>
@@ -18,16 +17,17 @@
 
     <!-- Navbar-->
     <div>
+        <canvas id="canvas"></canvas>
         <div class="header-blue">
             <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
                 <div class="container"><a class="navbar-brand" href="#">Code EDU</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Introdução</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">A linguagem Python</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Conceito 1</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Conceito 2</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#introducao">Introdução</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#linguagem">A linguagem Python</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#o-que">O que é Python?</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#executando">Executando</a></li>
                         </ul>
                 </div>
 
@@ -52,7 +52,7 @@
         <div class="bg-light">
           <div class="container py-5">
             <div class="row h-100 align-items-center py-5">
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="introducao">
                 <h1 class="display-4">Uma pequena introdução a Algoritmos</h1>
                 <p class="lead text-muted mb-0">
                     Temos que lidar com rotinas e/ou tarefas presentes em nosso dia a dia. Seja
@@ -77,7 +77,7 @@
           </div>
         </div>
 
-        <div class="bg-white py-5">
+        <div class="bg-white py-5" id="linguagem">
           <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 mx-auto"><img src="static/img/768px-Python-logo-notext.svg.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
@@ -89,7 +89,7 @@
                 </div>
               </div>
 
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-5" id="o-que">
               <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
                 <h2 class="font-weight-light">O que é o Python?</h2>
                 <p class="font-italic text-muted mb-4">O Python é uma das linguagens de programação mais populares do mundo. Criado no início da década de 1990, ele tem uma ampla variedade de usos, desde automatizar tarefas repetitivas e escrever aplicativos Web até criar modelos de machine learning e implementar redes neurais. Cientistas de dados, matemáticos e pesquisadores em particular gostam do Python devido à sua sintaxe avançada e fácil de entender e à grande variedade de pacotes open-source disponíveis. Pacotes são bibliotecas de códigos compartilhados comumente usados disponíveis gratuitamente para qualquer pessoa. <br>
@@ -103,7 +103,7 @@
 
 
 
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="executando">
               <div class="col-lg-5 px-5 mx-auto"><img src="static/img/SVG/character 20.svg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
               <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
                 <h2 class="font-weight-light">Executando código do Python</h2>
@@ -194,6 +194,7 @@
             </div>
         </footer>
     </div>
+    <script src="static/js/boxes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
