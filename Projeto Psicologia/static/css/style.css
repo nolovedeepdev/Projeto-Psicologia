@@ -12,24 +12,38 @@ html{
   scroll-behavior: smooth;
 }
 
-/*Canvas css*/
-#canvas{
-  width: 100%;
-  min-height: 100vh;
-  min-height: 100vh;
-  min-width: 100%;
-  top: 100;
-  right: 0;
-  bottom: 0;
-  left: 0;
+body {
+  background: #080a0b;
+  color: #080a0b;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-body {
-    background: #080a0b;
-    color: #080a0b;
-    margin: 0;
-		padding: 0;
-		height: 100%;
+/* Seleciona o h3 "Aprenda:" acima da interação */
+
+#interacao {
+  background-color:#ffffff;
+  height: 1%;
+}
+
+
+#title {
+    font-family: 'Roboto Condesned', sans-serif;
+    font-weight: bold;
+    background-color: #32caca60;
+    border-radius: 20px;
+    width: 85%;
+    padding: 2%;
+}
+
+#subtitle {
+    font-family: 'Roboto Condesned', sans-serif;
+    font-weight: bold;
+    background-color: #32caca60;
+    border-radius: 20px;
+    width: 85%;
+    padding: 2%;;
 }
 
 section:first-of-type {
@@ -652,6 +666,7 @@ section:nth-of-type(5) {
 .features-clean .item .description {
   font-size:15px;
   margin-bottom:0;
+  text-align: justify;
 }
 
 .features-clean .item .icon {
