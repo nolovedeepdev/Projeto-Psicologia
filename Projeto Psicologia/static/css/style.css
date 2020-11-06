@@ -20,10 +20,10 @@ body {
   height: 100%;
 }
 
-
+/* Seleciona o h3 "Aprenda:" acima da interação */
 
 #interacao {
-  background-color: white;
+  background-color:#ffffff;
   height: 1%;
 }
 
