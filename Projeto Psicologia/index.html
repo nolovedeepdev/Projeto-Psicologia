@@ -27,6 +27,7 @@
                     <div class="collapse navbar-collapse"
                         id="navcol-1">
                         <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#por-que">Por que programar?</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="#introducao">Introdução</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="#linguagem">A linguagem Python</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="#o-que">O que é Python?</a></li>
@@ -38,8 +39,8 @@
             <div class="container hero">
                 <div class="row">
                     <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                        <h1>Plataforma Code EDU</h1>
-                        <p>Projeto web para o Trabalho de Psicologia da Computação  </p><button class="btn btn-light btn-lg action-button" type="button"><a href="#linguagem">Ler o artigo do programa</a></button></div>
+                        <h1 id="title">Plataforma Code EDU</h1>
+                        <p id="subtitle">Projeto web para o Trabalho de Psicologia da Computação  </p><button class="btn btn-light btn-lg action-button" type="button"><a href="#linguagem">Ler o artigo do programa</a></button></div>
                     <div
                         class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
                         <div class="iphone-mockup"><img src="static/img/__code edu_v1.gif" class="device">
@@ -55,7 +56,7 @@
         <div class="features-clean">
           <div class="container">
               <div class="intro">
-                  <h2 class="text-center">Por que programar?</h2>
+                  <h2 class="text-center" id="por-que">Por que programar?</h2>
                   <p class="text-center">Reunimos comentários de estudantes da Universidade Federal do Pará  </p>
               </div>
               <div class="row features">
@@ -67,7 +68,9 @@
                   
                   <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon"></i>
                       <h3 class="name">Para o Gustavo</h3>
-                      <p class="description">“Programação é o novo inglês” é uma frase que já foi repetida várias e várias vezes em diversos lugares, mas por quê? Porque é verdade. O mercado de trabalho para programadores e profissionais de T.I. cresce de forma acelerada e por isso, programar é uma habilidade cada vez mais valiosa para qualquer pessoa. Por isso, criamos essa website para ensinar, de forma gratuita, conceitos básicos de programação em python com exercícios e videoaulas.
+                      <p class="description">“Programação é o novo inglês” é uma frase que já foi repetida várias e várias vezes em diversos lugares, mas por quê? Porque é verdade.
+                        O mercado de trabalho para programadores e profissionais de T.I. cresce de forma acelerada e por isso, programar é uma habilidade cada vez mais valiosa para qualquer pessoa.
+                        Programação é, ao contrário do que pensam, fácil e para qualquer um, pois é necessário apenas um pouco de conheçimento de lógica e matemática para começar a aprender
                       </p>
                   </div>
 
@@ -79,10 +82,6 @@
                         de resolução de problemas e elaboração de soluções, características indispensáveis
                         para qualquer profissional..</p>
                   </div>
-
-                  <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon"></i>
-                    <h3 class="name">Para a Hadria</h3>
-                    <p class="description"> </p>
                 </div>
                   
               </div>
@@ -100,7 +99,7 @@
                     costumamos seguir uma sequência de ações pré-estabelecidas para realizar cada
                     uma dessas tarefas. Tais passos que seguimos para concluir uma atividade, é
                     justamente aquilo que denominamos de ALGORITMOS.<br>
-                    <br>Algoritmos, sumariamente falando, é nada mais nada menos do que a base
+                    <br>Algoritmos, sumariamente falando, são nada mais nada menos do que a base
                     utilizada para PROGRAMAR. Ao contrário do que pensamos, desenvolver um
                     programa que execute quaisquer funções, não é um bicho de sete cabeças.
                     Sites, aplicativos e até mesmo softwares avançados capazes de, por
@@ -154,7 +153,7 @@
                     <br>A maioria dos ambientes de runtime dá suporte a duas maneiras de executar código Python: <br>
 
                     <br>1. Modo Interativo: nesse modo, cada comando que você digita é interpretado e executado imediatamente e você vê os resultados sempre que pressiona ENTER. É o modo padrão se você não passar um nome de arquivo para o interpretador. <br>
-                    <br>2. Modo do script: nesse modo, você coloca um conjunto de instruções do Python em um arquivo de texto com uma extensão .py . Em seguida, você executa o interpretador python e o aponta para o arquivo. O programa é executado linha a linha e a saída é exibida. Não há nenhuma etapa de compilação, conforme mostra o diagrama a seguir. <br>
+                    <br>2. Modo do script: nesse modo, você coloca um conjunto de instruções do Python em um arquivo de texto com uma extensão .py . Em seguida, você executa o interpretador python e o aponta para o arquivo. O programa é executado linha a linha e a saída é exibida. Não há nenhuma etapa de compilação. <br>
                 </p>
               </div>
             </div>
@@ -163,6 +162,9 @@
     </header>
 
     <!--Exercicios-->
+    <div class="text-center" id="interacao">
+      <h2>Aprenda: </h2>
+    </div>
 
     <div class="p-5 bg-white rounded shadow mb-5">
       <!-- Lined tabs-->
@@ -184,10 +186,39 @@
       <div id="myTab2Content" class="tab-content">
 
         <div id="home2" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
-          <p class="leade font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p class="leade font-italic mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="leade font-italic mb-0">Devido à crescente importancia do conhecimento de programação,
+            separamos algumas videoaulas e exercícios para que você possa começar seus estudos de python,
+            clique em "Compilador" para acessar o editor de texto e compilador python embutido na plataforma.
+          </p> <br>
+
+          <h3>Entrada e saída</h3><br>
+          <p class="leade font-italic mb-0">Essas videoaulas foram disponivilizadas no Canal no Youtube
+            do <a href="https://www.cursoemvideo.com/">Curso em Vídeo</a>, visite o site caso queria se
+            aprofundar mais no conteúdo.
+          </p> <br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/31llNGKWDdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <br><h3>Operadores aritimeticos</h3><br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Vw6gLypRKmY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <br><h3>Condicionais</h3><br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K10u3XIf1-Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <br><h3>Condicionais aninhadas</h3><br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/j9bYDjaAYzw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <br><h3>Estrutura de repetição for</h3><br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cL4YDtFnCt4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <br><h3>Estrutura de repetição while</h3><br>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LH6OIn2lBaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
         </div>
 
         <div id="profile2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
@@ -220,18 +251,7 @@
               <p>Apresentar a mensagem "A=" seguido pelo valor da variável area, conforme exemplo abaixo, com 4 casas após o ponto decimal. Utilize variáveis de dupla precisão (double). Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
               
               <!--EXERCICIO-->
-              <h2>Exercício #3 – Soma Simples</h2>
-              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9><br>
-              <p><br>Leia dois valores inteiros, no caso para variáveis A e B. A seguir, calcule a soma entre elas e atribua à variável SOMA. A seguir escrever o valor desta variável.</p><br>
-      
-              <strong>Entrada</strong><br>
-              <p>O arquivo de entrada contém 2 valores inteiros.</p> <br>
-                
-              <strong>Saída</strong><br>
-              <p>Imprima a mensagem "SOMA" com todas as letras maiúsculas, com um espaço em branco antes e depois da igualdade seguido pelo valor correspondente à soma de A e B. Como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
-            
-              <!--EXERCICIO-->
-              <h2>Exercício #4 – Produto Simples</h2>
+              <h2>Exercício #3 – Produto Simples</h2>
               <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
               <p><br>Leia dois valores inteiros. A seguir, calcule o produto entre estes dois valores e atribua esta operação à variável PROD. A seguir mostre a variável PROD com mensagem correspondente.   </p><br>
       
@@ -242,7 +262,7 @@
               <p>Imprima a mensagem "PROD" e a variável PROD conforme exemplo abaixo, com um espaço em branco antes e depois da igualdade. Não esqueça de imprimir o fim de linha após o produto, caso contrário seu programa apresentará a mensagem: “Presentation Error”.</p><br>
       
               <!--EXERCICIO-->
-              <h2>Exercício #5 – Média 1</h2>
+              <h2>Exercício #4 – Média 1</h2>
               <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
               <p><br>Leia 2 valores de ponto flutuante de dupla precisão A e B, que correspondem a 2 notas de um aluno. A seguir, calcule a média do aluno, sabendo que a nota A tem peso 3.5 e a nota B tem peso 7.5 (A soma dos pesos portanto é 11). Assuma que cada nota pode ir de 0 até 10.0, sempre com uma casa decimal.</p><br>
       
@@ -251,8 +271,33 @@
                 
               <strong>Saída</strong><br>
               <p>Imprima a mensagem "MEDIA" e a média do aluno conforme exemplo abaixo, com 5 dígitos após o ponto decimal e com um espaço em branco antes e depois da igualdade. Utilize variáveis de dupla precisão (double) e como todos os problemas, não esqueça de imprimir o fim de linha após o resultado, caso contrário, você receberá "Presentation Error".</p><br>
+
+              <h2>Exercício #5 – Fórmula de Bhaskara</h2>
+              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+              <p><br>Leia 3 valores de ponto flutuante e efetue o cálculo das raízes da equação de Bhaskara. Se não for possível calcular as raízes, mostre a mensagem correspondente “Impossivel calcular”, caso haja uma divisão por 0 ou raiz de numero negativo.
+      
+              <strong>Entrada</strong><br>
+              <p>Leia três valores de ponto flutuante (double) A, B e C.</p> <br>
+                
+              <strong>Saída</strong><br>
+              <p>Se não houver possibilidade de calcular as raízes, apresente a mensagem "Impossivel calcular". Caso contrário, imprima o resultado das raízes com 5 dígitos após o ponto, com uma mensagem correspondente conforme exemplo abaixo. Imprima sempre o final de linha após cada mensagem.</p><br>
               
-        </div>
+              <!--EXERCICIO-->
+              <h2>Exercício #6 – Tabuada</h2>
+              <h9>Este Exercício foi tirado da plataforma URI - Online Judge, para maiores informações acessar: https://www.urionlinejudge.com.br/judge/pt</h9>
+              
+              <p><br>Leia 1 valor inteiro N (2 < N < 1000). A seguir, mostre a tabuada de N:      
+                1 x N = N<br>
+                2 x N = 2N<br>
+                ...<br>
+                10 x N = 10N</p>
+      
+              <strong>Entrada</strong><br>
+              <p>A entrada contém um valor inteiro <strong>N</strong> (2 < <strong>N</strong> < 1000).</p> <br>
+        
+              <strong>Saída</strong><br>
+              <p>Imprima a tabuada de N, conforme o exemplo fornecido.</p><br>
+          </div>
 
         <div id="contact2" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
           <iframe src="https://trinket.io/embed/python3/1bfd976934" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
