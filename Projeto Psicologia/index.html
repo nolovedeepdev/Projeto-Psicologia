@@ -213,7 +213,42 @@
                     <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
+                        <h3><strong>ENTRADA DE DADOS</strong></h3>
+                        <p>
+                          Entrada de Dados refere-se a entrada de dados do mundo externo para o meio digital. É dessa forma que enviamos informações para dentro das nossas aplicações. A forma mais primitiva de enviar dados para uma aplicação é pelo Prompt de Comando, isto é, pelo Console propriamente dito.<br>
+                        </p>
+                        <img width="650"  src="static/img/console-python.png">
+                        <p>Uma aplicação pode, a qualquer momento, pedir que o usuário informe uma determinada informação, para isto, basta invocar a função input().</p>
+                        <p>A partir da versão 3 do Python, a função input(), tem por objetivo de escrever a String passada como parâmetro e em seguida, ativar o modo de digitação, isto é, colocar o Console de uma determinada forma em que seja possível a digitação (entrada de dados). É importante observar que versões anteriores do Python funcionavam de maneira distinta, e também, que a função input() nas versões 2x era utilizado para outro finalidade!</p>
+                        <p>A seguir, temos um exemplo onde imprimimos uma frase na tela e em seguida, é aberto para o usuário, a capacidade para digitação de letras e números.</p>
+                        <code>
+                          input("Escreva entre aspas alguma informação a ser impressa no Console ")
+                        </code>
+                        <p>O código acima, quando executado, irá imprimir o que está entre parêntesis no Console e em seguida, permitira ao usuário a digitação de qualquer tipo de dado alfanumérico. O conjunto de caracteres digitado pelo usuário, será retornado pela função input(). É responsabilidade do programador armazenar esses caracteres numa variável, como fazemos no exemplo a seguir:</p>
+                        <code>
+                          #coding: utf-8<br>
+                          <br>
+                          num = input("Digite um número:")<br>
+                          print(num)<br>
+                        </code>
+                        <p>No exemplo acima, será impresso a frase definida entre aspas e então, o console entrará num modo que permitirá o usuário digitar texto e números. Após o usuário digitar o que desejar e pressionar a tecla Enter, os dados digitados serão retornados pela função input(). No exemplo acima, estamos atribuindo o retorno da função para a variável num, logo, a mesma receberá aquilo que o usuário digitou no Console antes de pressionar a tecla Enter.</p>
+                        <p>Por fim, imprimimos na tela os caracteres digitados pelo nosso usuário através da função print().</p>
 
+                        <h4>OUTRAS FORMAS PARA ENTRADA DE DADOS</h4>
+                        <p>
+                          Uma aplicação pode receber dados através das mais distintas formas, como por exemplo, pela leitura de um arquivo, através dos protocolos TCP/IP, pelo uso de janelas gráficas, como por exemplo, a biblioteca TkInter, que é a forma nativa para a construção de Janelas Gráficas no Python e etc.
+                          <br>
+                          Há diversas maneiras para recebermos informações, porém, o princípio de como trataremos esses dados será, na maior parte da vezes o mesmo.
+                        </p>
+                        <h5>Exemplo prático</h5>
+                        <code>
+                          #coding: utf-8
+                          <br>
+                          login = input("Login:")<br>
+                          senha = input("Senha:")<br>
+                          <br>
+                          print("O usuário informado foi: %s, e a senha digitada foi: %s" %(login, senha))
+                        </code>
                       </div>
                     </div>
                   </div>
@@ -226,7 +261,7 @@
                     <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
-                        <h2><strong>INTRODUÇÃO ÀS OPERAÇÕES MATEMÁTICAS</strong></h2>
+                        <h2><strong>Operadores em Python</strong></h2>
                           <p>O Python além de ser uma excelente linguagem para a construção de aplicações de forma geral, também é, uma excelente linguagem para ser utilizada junto com a matemática, como por exemplo, 
                           na geração de relatórios, gráficos, estatísticas e etc.<br>
                           Atualmente, temos diversas bibliotecas matemáticas para serem utilizadas, e os recursos vão de simples análises e geração de gráficos a inteligência artificial, análise de sentimentos, 
@@ -462,7 +497,7 @@
                     <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
-                        <h3>ESTRUTURAS CONDICIONAIS</h3>
+                        <h3><strong>ESTRUTURAS CONDICIONAIS</strong> </h3>
                         <p>
                           Nesta terceira parte iremos dar inicio a aula de estruturas condicionais.<br>
                           Constantemente, acabamos lidando com situações onde precisamos tomar
@@ -592,7 +627,7 @@
                     <div id="collapseFour" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
-                        <h3>Condicionais alinhadas</h3>
+                        <h3><strong>Condicionais alinhadas</strong></h3>
                         <p>
                           Comumente, durante o processo de desenvolvimento, encontramos problemas que não podem ser solucionados com condicionais simples, como por exemplo, se quisermos checar se um número está entre um valor e outro.<br>
 
@@ -698,7 +733,7 @@
                     <div id="collapseFive" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
-                        <h3>ESTRUTURAS DE REPETIÇÃO</h3>
+                        <h3><strong>Estrutura de Repetição</strong> </h3>
                         <p>
                           Existem situações em que é comum a necessidade de uma mesma instrução (ou conjunto delas) ser executada diversas vezes repetidamente. Nessas ocorrências, é normal a utilização de um loop/laço que possibilita a execução de um mesmo conjunto de código atendendo uma condição preestabelecida. Nesta seção será apresentada a estrutura “ for ”.<br>
                         </p>
@@ -768,7 +803,7 @@
                     <div id="collapseSix" aria-labelledby="headingThree" data-parent="#accordionExample" class="collapse">
                       <div class="card-body p-5">
                         <!--Aulas aqui-->
-                        <h3>Laço de repetição While</h3>
+                        <h3><strong>Laço de repetição While</strong></h3>
                         <p>
                           Estrutura de repetição: while<br>
                           A estrutura while repete um bloco de instrução enquanto a condição determinada no
